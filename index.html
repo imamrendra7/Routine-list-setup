@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Daily Routine List</h1>
+    
+    <div class="task-input">
+      <div class="input-group">
+        <input type="text" id="taskInput" placeholder="Task description..." />
+        <input type="date" id="dueDate" />
+        <select id="priority">
+          <option value="Low">Low</option>
+          <option value="Medium" selected>Medium</option>
+          <option value="High">High</option>
+        </select>
+      </div>
+      <div class="add-btn-container">
+        <button onclick="addTask()">Add</button>
+      </div>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
