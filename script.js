@@ -4,8 +4,6 @@ const dueDate = document.getElementById("dueDate");
 const priority = document.getElementById("priority");
 
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-
-// Load tasks on page load
 window.onload = function () {
   tasks.forEach(task => renderTask(task));
 };
